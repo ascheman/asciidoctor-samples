@@ -1,0 +1,15 @@
+= Sample with embedded PlantUML
+:toc: left
+
+[plantuml,{imagesdir}/embedded-plantuml-sample1,svg]
+----
+@startuml
+skinparam componentStyle uml2
+
+actor me
+control asciidoctor
+entity "generated HTML"
+
+me -> asciidoctor : calls
+@enduml
+----
